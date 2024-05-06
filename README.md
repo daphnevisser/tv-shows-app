@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Building and running the project
 
-## Getting Started
-
-First, run the development server:
+To start the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To build the project:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm install
+npm run build
+```
 
-## Learn More
+## Tools I used
 
-To learn more about Next.js, take a look at the following resources:
+I used Next.js, Typescript and Tailwind to match Estrid's tech stack.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Why did I use them?
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I've worked with Next.js in a previous job and enjoyed it then. I went for the latest version (14+) and decided to use the app router and server components as much as possible, as I always enjoy learning and using new features. I made sure to do all API data fetching in server components (even for the search input by syncing it with the url query) which was a fun way to solve things.
 
-## Deploy on Vercel
+Typescript is something I always use and almost consider a "standard" in the industry today. It's just so much nicer to work with a typed TV-show compared to guessing what props are available.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Tailwind was a more new experience, which I have mostly heard a lot of but not used a lot in the past. In this case using the utility classes probably slowed me down compared to just writing my own CSS, but I'm sure I'd see more advantages with time.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Did you leave anything out?
+
+I didn't do the optional part, due to time constraints and wanting to focus on doing tho core parts well. I also couldn't find an obvious way to do it for all endpoints in the TVMaze API other than for scheduling.
+
+I didn't spend a lot of time on visual design and styling (as per the instructions). Just some basics to make it look ok. I put more focus into functionality rather than visuals.
